@@ -144,7 +144,7 @@ class EqlBackend(TextQueryBackend):
     # placeholders {field}, {op} and {list}
     field_in_list_expression: ClassVar[str] = "{field}{op}({list})"
     # Operator used to convert OR into in-expressions. Must be set if convert_or_as_in is set
-    or_in_operator: ClassVar[str] = " like~ "
+    or_in_operator: ClassVar[str] = " : "
     # List element separator
     list_separator: ClassVar[str] = ", "
 
